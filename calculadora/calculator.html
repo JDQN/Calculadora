@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Calculadora </title>
+</head>
+<body>
+<div>
+    <div class="contenedor">
+    <form class="calculadora" name="calc">
+        <input type="text" readonly class="value" name="txt" >
+        
+        <span class="clear clear" id="clear">C</span>
+
+        <span class="op" id="div">/</span>
+        <span class="op" id="multi">*</span>
+
+        <span class="num" id="num7">7</span>
+        <span class="num" id="num8">8</span>
+        <span class="num" id="num9">9</span>
+
+        <span class="op" id="res">-</span>
+
+        <span class="num" id="num4">4</span>
+        <span class="num" id="num5">5</span>
+        <span class="num" id="num6">6</span>
+
+        <span class="op plus" id="suma">+</span>
+
+        <span class="num" id="num3">3</span>
+        <span class="num" id="num2">2</span>
+        <span class="num" id="num1">1</span>
+
+        <span class="num" id="cero">0</span>
+        <span class="num" id="doble0">00</span>
+
+        <span class="num" id="punto">.</span>
+        <span class="igual equal" id="igual">=</span>
+    </form>
+  </div>
+</div>
+  <script src="js/calculadora.js"></script>
+  
+  <script src="https://unpkg.com/vanilla-tilt@1.7.0/lib/vanilla-tilt.js"></script>
+
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+  <script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".contenedor"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+ 
+</body>
+</html>
